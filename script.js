@@ -17,3 +17,30 @@ overlay.addEventListener('click', () => {
     overlay.classList.add('hidden');
     botao.textContent = '☰';
 });
+
+/* CAROUSEL FUNCIONAMENTO */
+
+const carousel = document.getElementById('carousel');
+const slides = carousel.children.length;
+let index = 0;
+
+function Carousel(){
+    carousel.style.transform = `translateX(-${index *100}%)`;
+}
+
+const prev = document.getElementById('prev');
+const next = document.getElementById('next')
+prev.addEventListener('click', ()=> {
+    index = (index - 1 + slides) % slides;
+    Carousel();
+})
+
+document.getElementById("next").addEventListener('click', ()=> {
+    index = (index + 1) % slides;
+    Carousel();
+});
+
+setInterval(() => {
+    index = (index + 1) % slides;
+    Carousel();
+}, 7000);
