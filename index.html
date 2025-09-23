@@ -11,13 +11,17 @@
   <body class="relative font-[Roboto] scroll-smooth">
 
 <!-- HEADER -->
-    <header id="header" class="bg-teal-700 text-white px-12 py-2 shadow-md md:px-36 lg:px-56 xl:px-72 sticky top-0 z-100">
-      <div class="flex justify-between items-center">
-        <h1 class="text-2xl font-bold">Pet&Style</h1>
+    <header id="header" class="bg-teal-700 text-white px-12 py-2 shadow-md sticky top-0 z-100">
+      <div class="flex justify-between items-center max-w-[80%] w-full mx-auto">
+
+        <div class="flex max-h-[50px] hover:scale-105 hover:cursor-pointer">
+          <img src="logo2.png" alt="Logo" class="mx-auto rounded max-h-[50px]">
+          <h1 class="text-2xl font-bold flex center my-auto pl-1 ">Pet&Style</h1>
+        </div>
 
         <button id="menu__button" class="md:hidden text-3xl focus:outline-none transform transition duration-600 z-50 relative">☰</button>
                 
-        <nav class="space-x-4 md:flex hidden xl:gap-8">
+        <nav class="md:flex hidden gap-2 lg:gap-8">
           <a href="#" class="hover:underline hover:scale-105 hover:font-bold transition transform">Home</a>
           <a href="#" class="hover:underline hover:scale-105 hover:font-bold transition transform">Serviços</a>
           <a href="#" class="hover:underline hover:scale-105 hover:font-bold transition transform">Produtos</a>
@@ -33,6 +37,7 @@
 
 <!-- FIZ FORA DO HEADER PRA NÃO PEGAR AS CONFIGURAÇÕES PADRÃO QUE HAVIA DETERMINADO NO HEADER EM SI -->
     <div id="mobile-menu" class="md:hidden bg-teal-700 text-white fixed top-0 right-0 h-full w-50 transform translate-x-full transition-transform duration-300 flex flex-col gap-8 p-6 z-40 items-center">
+      <img src="logo2.png" alt="Logo" class="mx-auto rounded max-h-[50px]">
       <h1 class="text-2xl font-bold">Pet&Style</h1>
       <a href="#" class="hover:underline font-bold">Home</a>
       <a href="#" class="hover:underline font-bold">Serviços</a>
@@ -43,8 +48,8 @@
     </div>
 <!-- FIM DO HEADER -->
 
-    <section class="carousel__Main flex justify-center py-2">
-      <div class="relative w-full max-w-7xl h-[400px] overflow-hidden rounded-lg shadow-md ">
+    <section class="carousel__Main flex justify-center py-4">
+      <div class="relative w-full max-w-[80%] h-[400px] overflow-hidden rounded-lg shadow-md ">
 
         <div id="carousel" class="flex h-full transition-transform duration-600">
           <img src="card1.png" alt="card1" class="w-full h-full flex-shrink-0 object-cover hover:cursor-pointer ">
@@ -59,38 +64,61 @@
       </div>
     </section>
 
-    <section id="products" class="bg-teal-100 py-8">
-      <div class="container mx-auto text-center md:px-12 lg:px-20">
+    <section id="products" class="bg-teal-100 py-4">
+      <div class="container text-center mx-auto max-w-[80%]">
 
-        <h3 class="text-3xl font-bold mb-6">Categorias de produtos</h3>
+        <h3 class="text-3xl font-bold mb-4 w-full bg-white rounded-lg py-2 text-teal-700">Navegue por categoria</h3>
 
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4">
           
-          <div class="bg-white p-1 rounded-lg shadow group hover:scale105 hover:-rotate-3 transition duration-300 hover:bg-teal-200 hover:border hover:border-teal-900">
-            <img src="Photo1.png" alt="ração" class="mx-auto rounded">
+          <div class="bg-white p-1 rounded-lg shadow group hover:scale105 hover:-rotate-3 transition duration-500 hover:bg-teal-200 hover:border hover:border-teal-900">
+            <img src="print1.png" alt="ração" class="mx-auto rounded">
             <h4 class="mt-4 font-bold">Pets</h4>
-            <p class="opacity-0 group-hover:opacity-100 transition-opacity duration-500">Venha conferir nossos bichinhos para adoção!</p>
+            <button class="group border mx-auto bg-teal-700 border-amber-300 text-amber-300 rounded-2xl py-1 hidden md:flex font-bold hover:cursor-pointer hover:scale-105 transform px-12  ">Ver mais</button>
           </div>
 
-          <div class="bg-white p-1 rounded-lg shadow group hover:scale105 hover:rotate-3 transition duration-300 hover:bg-teal-200 hover:border hover:border-teal-900">
-            <img src="Photo2.png" alt="brinquedo" class="mx-auto rounded">
+          <div class="bg-white p-1 rounded-lg shadow group hover:scale105 hover:rotate-3 transition duration-500 hover:bg-teal-200 hover:border hover:border-teal-900">
+            <img src="print2.png" alt="brinquedo" class="mx-auto rounded">
             <h4 class="mt-4 font-bold">Rações</h4>
-            <p class="opacity-0 group-hover:opacity-100 transition-opacity duration-500">Rações, alpiste, sementes entre outros...</p>
+            <button class="group border mx-auto bg-teal-700 border-amber-300 text-amber-300 rounded-2xl py-1 hidden md:flex font-bold hover:cursor-pointer hover:scale-105 transform px-12  ">Ver mais</button>
           </div>
 
-          <div class="bg-white p-1 rounded-lg shadow group hover:scale105 hover:-rotate-3 transition duration-300 hover:bg-teal-200 hover:border hover:border-teal-900">
-            <img src="Photo3.png" alt="coleira" class="mx-auto rounded">
+          <div class="bg-white p-1 rounded-lg shadow group hover:scale105 hover:-rotate-3 transition duration-500 hover:bg-teal-200 hover:border hover:border-teal-900">
+            <img src="print3.png" alt="coleira" class="mx-auto rounded">
             <h4 class="mt-4 font-bold">Utilidades</h4>
-            <p class="opacity-0 group-hover:opacity-100 transition-opacity duration-500">Gaiolas, arranhadores, viveiros, rodas-hamster </p>
+            <button class="group border mx-auto bg-teal-700 border-amber-300 text-amber-300 rounded-2xl py-1 hidden md:flex font-bold hover:cursor-pointer hover:scale-105 transform px-12  ">Ver mais</button>
           </div>
 
-          <div class="bg-white p-1 rounded-lg shadow group hover:scale105 hover:rotate-3 transition duration-300 hover:bg-teal-200 hover:border hover:border-teal-900">
-            <img src="Photo5.png" alt="coleira" class="mx-auto rounded">
+          <div class="bg-white p-1 rounded-lg shadow group hover:scale105 hover:rotate-3 transition duration-500 hover:bg-teal-200 hover:border hover:border-teal-900">
+            <img src="print4.png" alt="coleira" class="mx-auto rounded">
             <h4 class="mt-4 font-bold">Brinquedos</h4>
-            <p class="opacity-0 group-hover:opacity-100 transition-opacity duration-500">Inúmeras opções para os mais variados companheiros!</p>
+            <button class="group border mx-auto bg-teal-700 border-amber-300 text-amber-300 rounded-2xl py-1 hidden md:flex font-bold hover:cursor-pointer hover:scale-105 transform px-12  ">Ver mais</button>
           </div>
       </div>
       </div>
+    </section>
+
+    <section>
+
+      <div class="newsteller bg-gray-200 w-full h-auto">
+
+        <div class="container max-w-[80%] flex mx-auto h-[100%] justify-between flex-col lg:flex-row gap-2 lg:gap-6">
+
+          <div class="texts flex flex-col mx-auto py-2">
+            <h2 class="font-bold ">Fique por dentro das novidades!</h2>
+            <h2 class="subtitle">Cadastre-se na nossa newsteller</h2>
+          </div>  
+
+          <form action="" class="flex justify-center flex-col lg:flex-row gap-2 flex-1 py-2">
+            <input type="text" id="inputNomeNT" placeholder="Insira aqui o seu nome" class="bg-white rounded-xl text-center flex-1 focus:border-2 focus:border-teal-700 focus:outline-none caret-teal-700" >
+            <input type="text" id="inputEmailNT" placeholder="Insira aqui o seu melhor e-mail" class="bg-white rounded-xl text-center flex-1 focus:border-2 focus:border-teal-700 focus:outline-none caret-teal-700" >
+            <button id="botaoNT" class="flex items-center justify-center border bg-teal-700 border-amber-300 text-amber-300 rounded-2xl md:flex font-bold hover:cursor-pointer hover:scale-105 transform px-8">Assinar!</button>
+          </form>
+
+        </div>
+
+      </div>
+
     </section>
 
     <script src="script.js"></script>
